@@ -30,5 +30,5 @@ func (r Square) Area() uint {
 func (r Square) Perimeter() uint {
 	// a := r.End().x - r.start.x
 	// b := r.End().y - r.start.y
-	return uint(2 * r.a)
+	return uint((r.a + r.a) * 2)
 }
