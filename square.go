@@ -21,14 +21,14 @@ func (r Square) End() Point {
 
 // Area ...
 func (r Square) Area() uint {
-	// a := r.End().x - r.start.x
-	// b := r.End().y - r.start.y
-	return uint(r.a * r.a)
+	a := r.End().x - r.start.x
+	b := r.End().y - r.start.y
+	return uint(a * b)
 }
 
 // Perimeter ...
 func (r Square) Perimeter() uint {
-	// a := r.End().x - r.start.x
-	// b := r.End().y - r.start.y
-	return uint((r.a + r.a) * 2)
+	a := r.End().x - r.start.x
+	b := r.End().y - r.start.y
+	return uint(a+b) * 2
 }
